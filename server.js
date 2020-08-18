@@ -2,8 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
+require('dotenv').config();
 // const cors = require('cors');
-// const config = require('config');
 
 
 const app = express();
@@ -20,7 +20,7 @@ const db = require('./config/keys').mongoURI;
 
 ////// Mongo DB connection ////////////////////////////
 
-mongoose.connect(db, { dbName: 'shopping_list', useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
+mongoose.connect(process.env.MONGO_URI, { dbName: 'shopping_list', useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
                 .then(() => {
                     console.log('Connected to MongoDB!')
                 }).catch(err => console.log(err));
