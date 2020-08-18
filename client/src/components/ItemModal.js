@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, Form, FormGroup, Label, Input } from 'reactstrap';
 import { connect } from 'react-redux';
 import { addItem } from '../actions/itemActions';
-import { v4 as uuidv4 } from 'uuid';
 
 import PropTypes from  'prop-types';
 
@@ -28,7 +27,6 @@ class ItemModal extends Component {
 
 
         const newItem = {
-            id: uuidv4(),
             name: this.state.name
         }
 
