@@ -3,28 +3,29 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 let User = require('../../models/User');
+const auth = require('../../middleware/auth');
 ///////////////////////////////////////////////////////
 
 
-// GET request - Get all users
-router.route('/').get((req, res) => {
+// GET request - Get all users - PUBLIC ACCESS
+router.get('/', (req, res) => {
     User.find()
         .then(user => res.json(user))
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-// POST request - Add new user
-router.route('/').post((req, res) => {
+// POST request - Add new user - PUBLIC ACCESS
+router.post('/',  (req, res) => {
     const { name, email, password } = req.body
 
     // Validation for the input from the UI
     if(!name || !email || !password){
-        return res.status(400).json({ msg: 'Please, Enter all fields'})
+        return res.status(400).send('Please, Enter all fields')
     }
 
     User.findOne({ email })
         .then(user => {
-            if(user) return res.status(400).json({msg: 'User already exists'});
+            if(user) return res.status(400).send('User already exists');
 
             const newUser = new User({
                 name,

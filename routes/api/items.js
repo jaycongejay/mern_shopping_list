@@ -4,7 +4,7 @@ const auth = require('../../middleware/auth');
 ///////////////////////////////////////////////////////
 
 
-// GET request - Get all items - - PUBLIC ACCESS
+// GET request - Get all items - PUBLIC ACCESS
 router.get('/', (req, res) => {
     Item.find()
         .sort({ date: -1 })

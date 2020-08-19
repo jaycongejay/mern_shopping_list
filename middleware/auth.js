@@ -7,13 +7,13 @@ const jwt = require('jsonwebtoken');
 
 function auth(req, res, next) {
 
-    const token = req.header('x-auth-token');
+    const token = req.header("x-auth-token");
 
     // Check if token exist
     if(!token) {
-        return res.status(401).json({ msg: 'Cannot find token, authorization denied'});
+        // res.status(401).json({ msg: 'Cannot find token, authorization denied'});
+        res.status(401).send('Cannot find token, authorization denied');
     }
-
 
     try{
         // Verify token
