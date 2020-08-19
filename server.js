@@ -4,38 +4,37 @@ const bodyParser = require('body-parser');
 const path = require('path');
 require('dotenv').config();
 // const cors = require('cors');
+///////////////////////////////////////////////////////
 
 
 const app = express();
 
+// app.use(cors());
 app.use(bodyParser.json());
+// app.use(express.json()); // Parse json
 
 const port = process.env.PORT || 5000;
 
 
 
-// app.use(cors());
-// app.use(express.json()); // Parse json
 
 ////// Mongo DB connection ////////////////////////////
-
 mongoose.connect(process.env.MONGO_URI, { dbName: 'shopping_list', useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
                 .then(() => {
                     console.log('Connected to MongoDB!')
                 }).catch(err => console.log(err));
-                
-                
-
 ///////////////////////////////////////////////////////
 
 // const exerciseRouter = require('./routes/exercises');
 // const userRouter = require('./routes/users');
 // const authRouter = require('./routes/auth');
 const items = require('./routes/api/items');
+const users = require('./routes/api/users');
+const auth = require('./routes/api/auth');
 
 app.use('/api/items', items);
-// app.use('/users', userRouter);
-// app.use('/auth', authRouter);
+app.use('/api/users', users);
+app.use('/api/auth', auth);
 
 
 // app.get('/', (req, res) => {
