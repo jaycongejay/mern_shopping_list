@@ -9,23 +9,23 @@ const auth = require('../../middleware/auth');
 
 /** Authentication when user LOG IN */
 
-// POST request - LOGIN
+// POST request - LOGIN - access PUBLIC
 router.post('/', (req, res) => {
     const { email, password } = req.body
 
     // Validation for the input from the UI
     if(!email || !password){
-        return res.status(400).json({ msg: 'Please, Enter all fields'})
+        return res.status(400).send('Please, Enter all fields')
     }
 
     User.findOne({ email })
         .then(user => {
-            if(!user) return res.status(400).json({msg: 'User Does not exists'});
+            if(!user) return res.status(400).send('User Does not exists');
 
            // Validation for the password
            bcrypt.compare(password, user.password)
                  .then(match => {
-                     if(!match) return res.status(400).json({ msg: 'Invalid credentials'});
+                     if(!match) return res.status(400).send('Invalid credentials');
 
                      jwt.sign( // If the password match
                         { id: user.id },

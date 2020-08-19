@@ -21,7 +21,7 @@ export const loadUser = () => (dispatch, getState) => {
     // User loading
     dispatch({ type: USER_LOADING });
 
-    
+
     axios.get('/api/auth/user', tokenConfig(getState))
          .then(res => dispatch({
              type: USER_LOADED,
@@ -86,4 +86,29 @@ export const logout = () => {
     return {
         type: LOGOUT_SUCCESS
     };
+}
+
+
+// Login User
+export const login = existingUser => dispatch => {
+
+    // Headers
+    const config = {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+
+
+    axios.post('/api/auth', existingUser, config)
+        .then(res => dispatch({
+            type: LOGIN_SUCCESS,
+            payload: res.data
+        }))
+        .catch(err => {
+            dispatch(returnErrors(err.response.data, err.response.status, 'LOGIN_FAIL'));
+            dispatch({
+                type: LOGIN_FAIL
+            });
+        });
 }
