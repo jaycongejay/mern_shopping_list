@@ -32,13 +32,18 @@ class AppNavbar extends Component {
         })
     }
 
-
+    
     render() {
-
+        
         const { isAuthenticated, user } = this.props.auth;
 
         const authAccess = (
             <Fragment>
+                <NavItem>
+                    <span className="navbar-text mr-3">
+                        <strong>{ user ? `Welcome ${ user.name }`: ''}</strong>
+                    </span>
+                </NavItem>
                 <NavItem>
                     <LogOut/>
                 </NavItem>
@@ -66,7 +71,7 @@ class AppNavbar extends Component {
                         <Nav className="ml-auto" navbar>
                         <NavItem>
                             <NavLink href="https://github.com/jaycongejay" target="_blank">GitHub</NavLink>
-                        </NavItem>
+                        </NavItem>&ensp;&ensp;
                             { isAuthenticated ? authAccess : guestAccess}
                         </Nav>
                     </Collapse>
