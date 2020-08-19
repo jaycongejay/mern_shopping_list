@@ -13,7 +13,6 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 5000;
 
 
-const db = require('./config/keys').mongoURI;
 
 // app.use(cors());
 // app.use(express.json()); // Parse json

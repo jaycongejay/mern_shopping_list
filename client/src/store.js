@@ -4,6 +4,25 @@ import rootReducer from './reducers';
 
 
 
+// const initialState = {};
+
+
+// const middleware = [thunk];
+
+
+// const composeEnhancers = window.REDUX_DEVTOOLS_EXTENSION_COMPOSE || compose;
+
+
+// const enhancer = composeEnhancers(applyMiddleware(...middleware));
+
+
+// const store = createStore(
+// rootReducer,
+// initialState,
+// enhancer
+// );
+
+
 const initialState = {};
 
 const middleWare = [thunk];
