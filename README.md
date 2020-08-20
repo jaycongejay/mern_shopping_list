@@ -1,6 +1,6 @@
 # Shopping List
 
-    ## CRUD operation based on MERN stack
+    CRUD operation based on MERN stack
 
 ## Skills used
 
