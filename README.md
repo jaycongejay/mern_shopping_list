@@ -7,7 +7,7 @@
     HTML, CSS, JavaScript
 
     Front-End
-        ![React Logo]()images/icons8-react-100.png)
+        ![React Logo](images/icons8-react-100.png)
         Redux
 
     Back-End
