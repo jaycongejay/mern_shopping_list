@@ -7,7 +7,7 @@
     HTML, CSS, JavaScript
 
     Front-End
-        React <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>
+        React ![React](https://img.icons8.com/plasticine/100/000000/react.png)
         Redux
 
     Back-End
