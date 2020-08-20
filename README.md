@@ -7,8 +7,7 @@
     HTML, CSS, JavaScript
 
     Front-End
-        ![icons8-mongodb-50](https://user-images.githubusercontent.com/57822790/90716232-78469300-e27a-11ea-9b90-a12735c71e53.png)
-
+        ![icons8-mongodb-48](https://user-images.githubusercontent.com/57822790/90716409-e8edaf80-e27a-11ea-9524-a26a30f1bf80.png)
 
     Back-End
         Node Js
