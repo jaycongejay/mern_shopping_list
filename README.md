@@ -7,8 +7,8 @@
     HTML, CSS, JavaScript
 
     Front-End
-        React ![icons8-react-50](https://user-images.githubusercontent.com/57822790/90715806-51d42800-e279-11ea-9243-aa61f99fdc39.png)
-        Redux
+        React ![icons8-react-50](https://user-images.githubusercontent.com/57822790/90716000-d2932400-e279-11ea-81ce-bf537184868a.png)
+
 
     Back-End
         Node Js
