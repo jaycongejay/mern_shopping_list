@@ -7,11 +7,7 @@
     HTML, CSS, JavaScript
 
     Front-End
-<<<<<<< HEAD
-        React ![icons8-react-100](https://user-images.githubusercontent.com/57822790/90715399-2866cc80-e278-11ea-8809-6f036314471d.png)
-=======
-        ![](/images/icons8-react-100.png)
->>>>>>> refs/remotes/origin/master
+        React <img src="https://img.icons8.com/plasticine/50/000000/react.png"/>
         Redux
 
     Back-End
