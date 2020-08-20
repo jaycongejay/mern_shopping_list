@@ -7,7 +7,7 @@
     HTML, CSS, JavaScript
 
     Front-End
-        React ![icons8-react-50](https://user-images.githubusercontent.com/57822790/90716000-d2932400-e279-11ea-81ce-bf537184868a.png)
+        ![icons8-mongodb-50](https://user-images.githubusercontent.com/57822790/90716232-78469300-e27a-11ea-9b90-a12735c71e53.png)
 
 
     Back-End
