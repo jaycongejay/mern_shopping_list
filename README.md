@@ -1,6 +1,12 @@
 # Shopping List
 
     CRUD operation based on MERN stack
+        LogIn
+        LogOut
+        Create User Account
+        Create, Read, Update, Delete shopping item
+        Control access
+        Authentication
 
 ## Skills used
 
