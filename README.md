@@ -7,7 +7,8 @@
     HTML, CSS, JavaScript
 
     Front-End
-        React + Redux
+        React <img src="https://img.icons8.com/plasticine/100/000000/react.png"/>
+        Redux
 
     Back-End
         Node Js
