@@ -4,20 +4,20 @@
 
 ## Skills used
 
-    * HTML, CSS, JavaScript
+    HTML, CSS, JavaScript
 
-    * Front-End
-        * React + Redux
+    Front-End
+        React + Redux
 
-    * Back-End
-        * Node Js
-        * Express
-        * Bcrypt
-        * JWT
+    Back-End
+        Node Js
+        Express
+        Bcrypt
+        JWT
 
-    * Database
-        * MongoDB(Atlas)
+    Database
+        MongoDB(Atlas)
 
-    * Deploy
-        * Heroku
+    Deploy
+        Heroku
     
