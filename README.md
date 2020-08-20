@@ -7,7 +7,8 @@
     HTML, CSS, JavaScript
 
     Front-End
-        ![icons8-mongodb-48](https://user-images.githubusercontent.com/57822790/90716409-e8edaf80-e27a-11ea-9524-a26a30f1bf80.png)
+        React
+        Redux
 
     Back-End
         Node Js
@@ -21,3 +22,22 @@
     Deploy
         Heroku
     
+test
+
+<img src="https://img.icons8.com/color/48/000000/javascript.png"/><img src="https://img.icons8.com/color/48/000000/html-5.png"/><img src="https://img.icons8.com/color/48/000000/css3.png"/><img src="https://img.icons8.com/color/50/000000/mongodb.png"/><img src="https://img.icons8.com/plasticine/50/000000/react.png"/><img src="https://img.icons8.com/color/48/000000/redux.png"/><img src="https://img.icons8.com/color/48/000000/nodejs.png"/><img src="https://img.icons8.com/color/48/000000/heroku.png"/>
+
+<a href="https://icons8.com/icon/108784/javascript">JavaScript icon by Icons8</a>
+
+<a href="https://icons8.com/icon/20909/html-5">Html 5 icon by Icons8</a>
+
+<a href="https://icons8.com/icon/21278/css3">CSS3 icon by Icons8</a>
+
+<a href="https://icons8.com/icon/74402/mongodb">MongoDB icon by Icons8</a>
+
+<a href="https://icons8.com/icon/NfbyHexzVEDk/react">React icon by Icons8</a>
+
+<a href="https://icons8.com/icon/jD-fJzVguBmw/redux">Redux icon by Icons8</a>
+
+<a href="https://icons8.com/icon/54087/nodejs">Nodejs icon by Icons8</a>
+
+<a href="https://icons8.com/icon/31085/heroku">Heroku icon by Icons8</a>
