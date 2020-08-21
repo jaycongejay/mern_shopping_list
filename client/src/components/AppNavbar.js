@@ -70,7 +70,7 @@ class AppNavbar extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <NavLink href="https://github.com/jaycongejay" target="_blank">GitHub</NavLink>
+                            <NavLink href="https://github.com/jaycongejay/mern_shopping_list" target="_blank">GitHub</NavLink>
                         </NavItem>&ensp;&ensp;
                             { isAuthenticated ? authAccess : guestAccess}
                         </Nav>
