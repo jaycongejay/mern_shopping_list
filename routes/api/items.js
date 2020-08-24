@@ -36,7 +36,7 @@ router.post('/:id', auth, (req, res) => {
             .then(item => {
                 item.name = req.body.name;
                 item.save()
-                        .then(() => res.json('Item is updated'))
+                        .then(() => res.send('Item is updated'))
                         .catch(err => res.status(400).json('Error: ' + err));
             })
             .catch(err => res.status(400).send('Error: ' + err));
