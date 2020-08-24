@@ -1,8 +1,8 @@
 .fa-trash-alt:hover{
     cursor: pointer;
-    color: black !important;
+    font-size: 20px;
 }
 .fa-edit:hover{
     cursor: pointer;
-    color: blue !important;
+    font-size: 20px;
 }

@@ -45,13 +45,8 @@ class ShoppingList extends Component {
         // Edit the item
         this.props.editItem(this.state.id, editItem);
         
-        // // Get all updated items
-        // this.props.getItems();
-
-
         this.toggle();
 
-        window.location.reload();
     }
 
     toggle = (id, name) => {

@@ -50,7 +50,7 @@ class ItemModal extends Component {
                     onClick={this.toggle}
                 >
                     Add
-                </Button> : <h4 className="mb-3 ml-4">Please, LOGIN to manage</h4>}
+                </Button> : <h4 className="mb-3 ml-4"><i className="fas fa-shopping-cart"></i>&ensp;LOGIN</h4>}
                
                 <Modal isOpen={this.state.modal} toggle={this.toggle}>
                     <ModalHeader toggle={this.toggle}>Add to Shopping List</ModalHeader>
