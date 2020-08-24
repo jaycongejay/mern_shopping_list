@@ -28,5 +28,20 @@ router.delete('/:id', auth, (req, res) => {
         .catch(err => res.status(404).json({success: false}));
 })
 
+// UPDATE request - modify a item - PRIVATE ACCESS
+router.post('/:id', auth, (req, res) => {
+    
+    // Update the item
+    Item.findById(req.params.id)
+            .then(item => {
+                item.name = req.body.name;
+                item.save()
+                        .then(() => res.json('Item is updated'))
+                        .catch(err => res.status(400).json('Error: ' + err));
+            })
+            .catch(err => res.status(400).send('Error: ' + err));
+    
+})
+
 
 module.exports = router;
